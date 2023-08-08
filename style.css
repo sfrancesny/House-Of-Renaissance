@@ -1,0 +1,254 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Zeyada&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Staatliches&family=Zeyada&display=swap');
+
+
+body {
+  background-color: black;
+}
+
+.hor {
+  position: relative;
+}
+
+.navigation-container {
+  max-width: 600px; /* Adjust this to match the quiz section's width */
+  margin: 0 auto; /* Center the container horizontally */
+  /* padding: 10px; Add padding to create space around the navigation  */
+  position: relative; /* Add position relative */
+  z-index: 2; /* Add a higher z-index value to make it appear above video and quiz */
+}
+
+/* Add styles for the navigation bar container */
+.navigation-container {
+  max-width: 575px; /* Adjust this to match the quiz section's width */
+  width: 100%; /* Set the navigation container to take the full available width */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 10px; /* Add padding to create space around the navigation */
+  position: relative; /* Add position relative */
+  z-index: 2; /* Add a higher z-index value to make it appear above video and quiz */
+}
+
+/* Add styles for the navigation bar */
+.navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  /* justify-content: space-between; */
+  /* background-color: black; */
+  text-align: center;
+}
+
+.navigation li {
+  flex: 1;
+}
+
+.navigation li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: 200; /* Remove 'px' from the font-weight value */
+  font-family: 'Staatliches', cursive;
+  transition: background-color 0.2s ease;
+  transform: translateX(-10px) translateY(-6px);
+  padding: 6px 12px; /* Adjust the padding to make the buttons height smaller */
+  margin: 0 5px; /* Adjust the margin value to move them closer or farther apart */
+  }
+  
+  .navigation li a:hover {
+    background-color: mediumblue;
+  }
+
+/* Add responsive CSS for phones */
+@media (max-width: 480px) {
+  .navigation-container {
+    max-width: 100%; /* Adjust the maximum width for phones */
+    padding: 5px; /* Adjust padding for phones */
+  }
+
+  .navigation li a {
+    width: auto; /* Allow navigation links to take full width on phones */
+  }
+}
+
+#video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.quiz-section-container {
+  position: relative;
+  z-index: 1;
+  display: flex; /* Use flexbox to align elements */
+  justify-content: center; /* Center the elements horizontally */
+  align-items: center; /* Center the elements vertically */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.quiz-section {
+  height: 360px;
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 25px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.quiz-section button:hover {
+  background-color: lightgray;
+}
+
+.quiz-image {
+  max-width: 100%;
+  height: auto;
+}
+
+#startQuizButton {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-140px);
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#startQuizButton:hover {
+  background-color: mediumblue;
+}
+
+/* Add styles for the quiz questions  */
+.quiz-section h2 {
+  font-size: 28px;
+  font-family:'Bebas Neue', sans-serif;
+  color: #333;
+  margin-bottom: 10px;
+  transform: translateY(-20px);
+}
+
+.quiz-section li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.quiz-section button:hover {
+  background-color: lightblue;
+}
+
+.quiz-section li button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-family: 'Zeyada', cursive;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  background-color: #007BFF; /* Regular blue background color */
+  color: white;
+  transform: translateX(-18px) translateY(-20px);
+  box-shadow:
+    0 0 10px #007BFF, /* Neon blue box-shadow */
+    0 0 20px #007BFF,
+}
+
+.quiz-section li button:hover {
+  background-color: mediumblue;
+}
+
+/* Add styles for the results container */
+#resultsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 56px;
+  color: darkgray;
+  font-weight: bold;
+  background-color: black;
+}
+
+#resultsContainer h2 {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+#resultsContainer p {
+  font-family: 'Zeyada', cursive;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: rgb(251, 69, 193);
+}
+
+#restart-btn {
+  font-size: 18px;
+  background-color: #007BFF;
+  color: white; /* White text color */
+  padding: 10px 20px; /* Padding around the button text */
+  border: none; /* Remove default button border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Show a pointer cursor on hover */
+  transform: translateY(30px);
+}
+
+#restart-btn:hover {
+  background-color: mediumblue;
+}
+
+iframe {
+  width: 100%; /* Adjust the width as per your layout */
+  height: 400px; /* Set the desired height */
+  border: 2px solid #ccc; /* Add a border to the map */
+  margin-top: 20px; /* Add some spacing between the quiz and the map */
+}
+
+.map-container {
+  width: 100%;
+  max-width: 640px; /* Adjust the maximum width as per your preference */
+  margin: 0 auto; /* This will center the container horizontally */
+  margin-top: 20px; /* Add some spacing between the quiz and the map */
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px; /* Adjust font size for even smaller screens */
+  }
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 25px; /* Add a top margin of 25 pixels to the footer */
+}
+
+/* Responsive CSS */
+@media only screen and (max-width: 768px) {
+  header,
+  footer {
+    font-size: 14px;
+  }
+}
