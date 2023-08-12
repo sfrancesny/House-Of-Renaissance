@@ -14,7 +14,6 @@ Stay up-to-date with the largest-grossing tour for any black artist, EVER.
 
 
  ## Screenshots
-<img src="Screenshot HoR-0.png"/>
 <img src="Screenshot HoR.png"/>
 <img src="Screenshot HoR-2.png"/>
 <img src="Screenshot HoR-3.png"/>
