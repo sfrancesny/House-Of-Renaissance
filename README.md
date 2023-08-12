@@ -10,7 +10,7 @@ Hey Bey, we are super excited that you decided to grace us, Charlotte NC, with Y
 
 
 ## Usage 
-Stay up-to-date with the largest-grossing tour for any black artist, EVER. 
+Stay up-to-date with the largest-grossing tour of any black artist, EVER. 
 
 
  ## Screenshots
